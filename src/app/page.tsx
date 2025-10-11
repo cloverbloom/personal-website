@@ -2,8 +2,41 @@
 import { InView } from "@/components/ui/in-view";
 import { motion } from "framer-motion";
 import myImage from "@/assets/images/7b86cbb6fbb47c5fa672b6c466d609a0.jpg";
+import { useState } from "react";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setMessage("");
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage("Thanks for subscribing!");
+        setEmail("");
+      } else {
+        setMessage(data.error || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setMessage("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
    return (
     <div className="pt-8 w-2/5">
@@ -11,7 +44,31 @@ export default function Home() {
 
         <p className="title">GARRETT NELSON</p>
 
-        <p>Loading...</p>
+        <p>Loading good copy...</p>
+
+        <p>I want to send emails when I do something big. If you'd like to be on that list you can sign up here.</p>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="your@email.com"
+            required
+            className="paragraph w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="paragraph w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </button>
+        </form>
+
+        {message && (
+          <p className="paragraph text-center">{message}</p>
+        )}
 
         <InView
           viewOptions={{ once: true, margin: "0px 0px -100px 0px" }}
