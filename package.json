@@ -48,5 +48,9 @@
     "lint": "next lint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "start": "next start"
-  }
+  },
+  "cacheDirectories": [
+    ".next/cache",
+    "node_modules/.cache"
+  ]
 }
