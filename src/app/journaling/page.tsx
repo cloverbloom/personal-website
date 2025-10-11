@@ -1,27 +1,15 @@
-import Link from "next/link";
-
 export default function JournalingPage() {
 
   return (
+    <div className="pt-8 w-2/5">
+       <section className="paragraph space-y-8">
 
-    <div className="p-8 font-sans w-2/5">
+        <p className="title">MY JOURNALING SYSTEM</p>
 
-      <nav className="flex gap-8 heading-3 font-medium">
+        <p>Journaling is one of the most rewarding things anyone can do. I update this page with my current system only to help other people get started.</p>
+        <p>Overtime, you will develop your own methods & ideas which will serve you on your own journey.</p>
 
-        <Link href="/">home</Link>
-
-        <Link href="/journaling">current notes system</Link>
-
-        <Link href="/content">recommended content</Link>
-
-      </nav>
-
-      <h1 className="heading-1 font-bold mb-4">journaling</h1>
-
-      <p className="text-body">welcome to the journaling page. write thoughts, notes, or daily logs here.</p>
-
+      </section>
     </div>
-
   );
-
 }

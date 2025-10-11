@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-8">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -47,11 +47,15 @@ export default function RootLayout({
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/components">Components</BreadcrumbLink>
+                <BreadcrumbLink href="/content">Content</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
+                <BreadcrumbLink href="/journaling">Journaling</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="https://www.youtube.com/@garrettfnelson" target="_blank" rel="noopener noreferrer">YouTube</BreadcrumbLink>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
