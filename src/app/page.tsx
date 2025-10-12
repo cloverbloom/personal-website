@@ -28,7 +28,7 @@ export default function Home() {
       const data = await response.json() as { error?: string };
 
       if (response.ok) {
-        setMessage("Thanks for subscribing!");
+        setMessage("Thanks. Stay tuned.");
         setEmail("");
       } else {
         setMessage(data.error || "Something went wrong. Please try again.");
