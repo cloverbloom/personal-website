@@ -2,9 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(request: NextRequest) {
   try {
-    const { email } = await request.json();
+    const body = await request.json() as { email?: string };
+    const { email } = body;
 
-    if (!email) {
+    if (!email || typeof email !== 'string') {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
     }
 
@@ -20,7 +21,7 @@ export async function POST(request: NextRequest) {
     });
 
     if (!response.ok) {
-      const errorData = await response.json();
+      const errorData = await response.json() as Record<string, unknown>;
       console.error('Kit API Error:', {
         status: response.status,
         statusText: response.statusText,
@@ -32,7 +33,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const data = await response.json();
+    const data = await response.json() as Record<string, unknown>;
     return NextResponse.json({ success: true, data });
 
   } catch (error) {
