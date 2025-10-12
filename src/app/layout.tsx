@@ -10,6 +10,9 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Home } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import cloverbloomLogo from "@/assets/images/cloverbloom.webp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +38,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Link href="https://www.cloverbloom.co" target="_blank" rel="noopener noreferrer" className="fixed bottom-8 right-8">
+          <Image
+            src={cloverbloomLogo}
+            alt="Cloverbloom Logo"
+            style={{ width: '35px', height: 'auto' }}
+          />
+        </Link>
         <div className="container mx-auto p-8">
           <Breadcrumb>
             <BreadcrumbList>

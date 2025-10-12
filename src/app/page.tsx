@@ -2,7 +2,8 @@
 import { InView } from "@/components/ui/in-view";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import myImage from "@/assets/images/7b86cbb6fbb47c5fa672b6c466d609a0.jpg";
+import Pintrest from "@/assets/images/7b86cbb6fbb47c5fa672b6c466d609a0.webp";
+import personalSignature from "@/assets/images/signature.webp";
 import { useState } from "react";
 
 export default function Home() {
@@ -42,7 +43,7 @@ export default function Home() {
 
    return (
     <div className="pt-8 w-2/5">
-       <section className="paragraph space-y-8">
+      <section className="paragraph space-y-8">
 
         <p className="title">GARRETT NELSON</p>
 
@@ -80,16 +81,26 @@ export default function Home() {
               hidden: { opacity: 0, scale: 0.8, filter: "blur(10px)" },
               visible: { opacity: 1, scale: 1, filter: "blur(0px)" },
             }}
-            className="w-full aspect-square"
+            className="w-full"
           >
             <Image
-              src={myImage}
+              src={Pintrest}
               alt="I wanna be this and I wanna be that"
               className="w-full rounded-lg object-cover"
               style={{ height: 'auto' }}
             />
           </motion.div>
         </InView>
+
+        <p>It would be really fun to get emails from people. Everything is appreciated. You can ping me here at: garrett@cloverbloom.co</p>
+        <p>Cheers.</p>
+
+        <Image
+          src={personalSignature}
+          alt="Signature"
+          className="w-1/5 mx-auto rounded-lg object-cover"
+          style={{ height: 'auto' }}
+        />
 
       </section>
     </div>
