@@ -1,6 +1,7 @@
 "use client";
 import { InView } from "@/components/ui/in-view";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import myImage from "@/assets/images/7b86cbb6fbb47c5fa672b6c466d609a0.jpg";
 import { useState } from "react";
 
@@ -32,6 +33,7 @@ export default function Home() {
         setMessage(data.error || "Something went wrong. Please try again.");
       }
     } catch (error) {
+      console.error("Subscription error:", error);
       setMessage("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -80,10 +82,11 @@ export default function Home() {
             }}
             className="w-full aspect-square"
           >
-            <img
-              src={myImage.src}
+            <Image
+              src={myImage}
               alt="I wanna be this and I wanna be that"
               className="w-full rounded-lg object-cover"
+              style={{ height: 'auto' }}
             />
           </motion.div>
         </InView>
