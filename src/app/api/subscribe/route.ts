@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        api_secret: process.env.KIT_API_KEY,
+        api_secret: process.env.KIT_API_SECRET,
         email: email,
       }),
     });
