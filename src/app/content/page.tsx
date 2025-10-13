@@ -17,11 +17,25 @@ export default function ContentPage() {
             <Link href="https://en.wikipedia.org/wiki/Fight_Club" target="_blank" rel="noopener noreferrer">Fight Club (2h 19m)</Link>
           </li>
           <li>
-            <Link href="https://www.navalmanack.com" target="_blank" rel="noopener noreferrer">The Almanack of Naval Ravikant (5-6h)</Link>
+            <Link href="https://www.navalmanack.com" target="_blank" rel="noopener noreferrer">The Almanack of Naval Ravikant (164 Pages)</Link>
           </li>
           <li>
-            <Link href="https://jamesclear.com/atomic-habits" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Atomic Habits (6-7h)</span></Link>
-            <span className="block text-muted-foreground paragraph">by admitting you have control you take responsibility</span>
+            <Link href="https://jamesclear.com/atomic-habits" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Atomic Habits (320 Pages)</span></Link>
+            <span className="block text-muted-foreground paragraph">habits establish a baseline good or bad</span>
+          </li>
+          <li>
+            <Link href="https://en.wikipedia.org/wiki/Iliad" target="_blank" rel="noopener noreferrer">The Iliad (704 Pages)</Link>
+          </li>
+          <li>
+            <Link href="https://en.wikipedia.org/wiki/Poems_%26_Prayers" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Poems & Prayers (208 Pages)</span></Link>
+            <span className="block text-muted-foreground paragraph">refreshing take on modern philosophy</span>
+          </li>
+          <li>
+            <Link href="https://en.wikipedia.org/wiki/Poems_%26_Prayers" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Man's Search for Meaning (165 Pages)</span></Link>
+            <span className="block text-muted-foreground paragraph"> a go to book for understanding modern depression</span>
+          </li>
+          <li>
+            <Link href="https://en.wikipedia.org/wiki/Good_Will_Hunting" target="_blank" rel="noopener noreferrer">Good Will Hunting (2h 4m)</Link>
           </li>
         </ul>
       </section>
