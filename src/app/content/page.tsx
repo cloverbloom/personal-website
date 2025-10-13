@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ContentPage() {
 
    return (
-    <div className="pt-8 w-2/5">
+    <div className="pt-8 w-4/5 md:w-2/5">
        <section className="paragraph space-y-8">
 
         <p className="title">CONTENT I RECOMMEND TO FRIENDS</p>

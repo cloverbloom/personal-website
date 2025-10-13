@@ -1,7 +1,7 @@
 export default function JournalingPage() {
 
   return (
-    <div className="pt-8 w-2/5">
+    <div className="pt-8 w-4/5 md:w-2/5">
        <section className="paragraph space-y-8">
 
         <p className="title">MY JOURNALING SYSTEM</p>
