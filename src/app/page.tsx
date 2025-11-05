@@ -2,7 +2,7 @@
 import { InView } from "@/components/ui/in-view";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Pintrest from "@/assets/images/f86694500a83c57891fc7461f621a74a.webp";
+import Pintrest from "@/assets/images/of-a-wasted-life.webp";
 import personalSignature from "@/assets/images/signature.webp";
 import { useState } from "react";
 
