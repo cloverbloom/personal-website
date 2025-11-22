@@ -59,10 +59,10 @@ export default function RootLayout({
                 <BreadcrumbLink href="/content">Content</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
-              <BreadcrumbItem>
+              {/* <BreadcrumbItem>
                 <BreadcrumbLink href="/journaling">Journaling</BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator />
+              <BreadcrumbSeparator /> */}
               <BreadcrumbItem>
                 <BreadcrumbLink href="https://www.youtube.com/@garrettfnelson" target="_blank" rel="noopener noreferrer">YouTube</BreadcrumbLink>
               </BreadcrumbItem>
