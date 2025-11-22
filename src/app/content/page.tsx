@@ -61,7 +61,20 @@ export default function ContentPage() {
             <Link href="https://en.wikipedia.org/wiki/Fantastic_Mr._Fox_(film)" target="_blank" rel="noopener noreferrer">Fantastic Mr.Fox (1h 27m)</Link>
           </li>
 
+          {/* man's search for meaning */}
+          <li>
+            <Link href="https://youtu.be/9boVw2lnP5Q?si=N08IeP4BxG8Adohj&t=2532" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>J. Cole ESPN Interview (8m)</span></Link>
+            <span className="block text-muted-foreground paragraph">define your dream as high as you possibly can</span>
+            <span className="block text-muted-foreground paragraph">believe it is possible & protect it</span>
+            <span className="block text-muted-foreground paragraph">start doing the hard work</span>
+          </li>
 
+          {/* man's search for meaning */}
+          <li>
+            <Link href="https://youtu.be/pqWUuYTcG-o?si=2ipn05OR_5HfrCnR&t=794" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Rodger Federer "Perfection is Impossible" (2m)</span></Link>
+            <span className="block text-muted-foreground paragraph">attack everything with intensity</span>
+            <span className="block text-muted-foreground paragraph">but once it's behind you it's behind you</span>
+          </li>
 
           {/* ---------- save for later ---------- */}
 
