@@ -66,11 +66,11 @@ export default function RootLayout({
               <BreadcrumbItem>
                 <BreadcrumbLink href="/check-ins">Check-Ins</BreadcrumbLink>
               </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                  <BreadcrumbLink href="https://www.youtube.com/@garrettfnelson" target="_blank" rel="noopener noreferrer">YouTube</BreadcrumbLink>
+                </BreadcrumbItem>
             </BreadcrumbList>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-                <BreadcrumbLink href="https://www.youtube.com/@garrettfnelson" target="_blank" rel="noopener noreferrer">YouTube</BreadcrumbLink>
-              </BreadcrumbItem>
           </Breadcrumb>
           {children}
         </div>
