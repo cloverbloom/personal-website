@@ -9,7 +9,7 @@ export default function ContentPage() {
         <p className="title">CONTENT I'D RECOMMEND</p>
         
         <p>Anything on this list is something I would recommend to a friend depending on the conversation.</p>
-        <p>Maybe these resonate with you maybe not. However, I think all the messages presented are universal in some way.</p>
+        <p>Maybe these resonate with you, maybe not. However, I think all of these messages are universal in some way & should be considered.</p>
         <p>Anythng in <span style={{ color: 'red' }}>red</span> is something that deeply impacted me & shifted my personal philosophy in some way.</p>
 
         <ul className="list-disc pl-8">
@@ -21,7 +21,7 @@ export default function ContentPage() {
 
           {/* man's search for meaning */}
           <li>
-            <Link href="https://en.wikipedia.org/wiki/Poems_%26_Prayers" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Man's Search for Meaning (165 Pages)</span></Link>
+            <Link href="https://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/0807014273" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Man's Search for Meaning (165 Pages)</span></Link>
             <span className="block text-muted-foreground paragraph">has ideas most people are not ready to accept</span>
             <span className="block text-muted-foreground paragraph">think about this book daily</span>
           </li>
@@ -74,6 +74,11 @@ export default function ContentPage() {
             <Link href="https://youtu.be/pqWUuYTcG-o?si=2ipn05OR_5HfrCnR&t=794" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Rodger Federer "Perfection is Impossible" (2m)</span></Link>
             <span className="block text-muted-foreground paragraph">attack everything with intensity</span>
             <span className="block text-muted-foreground paragraph">but once it's behind you it's behind you</span>
+          </li>
+
+          {/* jeff bezos's shareholder letters */}
+          <li>
+            <Link href="https://open.spotify.com/episode/47t4mFYbqPy4uZWag2iO8m?si=5138b55b9ed84dec" target="_blank" rel="noopener noreferrer">Jeff Bezos's Shareholder Letters (1h 20m)</Link>
           </li>
 
           {/* ---------- save for later ---------- */}

@@ -47,7 +47,7 @@ export default function Home() {
 
         <p className="title">GARRETT NELSON</p>
 
-        <p>Loading good copy...</p>
+        <p>Loading life story...</p>
 
         <p>I want to send emails when I do something big. If you'd like to be on that list you can sign up here.</p>
 
@@ -92,7 +92,7 @@ export default function Home() {
           </motion.div>
         </InView>
 
-        <p>It would be really fun to get emails from people. Everything is appreciated. You can ping me here at: garrett@cloverbloom.co</p>
+        <p>It would be really fun to get emails from people. Anything is appreciated. You can ping me here at: garrett@cloverbloom.co</p>
         <p>Cheers.</p>
 
         <Image
