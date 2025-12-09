@@ -28,7 +28,7 @@ export default function Home() {
       const data = await response.json() as { error?: string };
 
       if (response.ok) {
-        setMessage("Thanks. Stay tuned.");
+        setMessage("Thanks. Got some quality content coming your way.");
         setEmail("");
       } else {
         setMessage(data.error || "Something went wrong. Please try again.");

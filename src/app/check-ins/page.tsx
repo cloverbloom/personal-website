@@ -29,6 +29,13 @@ export default function ContentPage() {
             <Link href="https://youtu.be/p44Wr8PBQps" target="_blank" rel="noopener noreferrer">July 12th, 2025 (10m)</Link>
           </li>
 
+          {/* july 12th, 2025 */}
+          <li>
+            <Link href="https://garrettnelson.co" target="_blank" rel="noopener noreferrer">October 27th, 2025 (10m)</Link>
+            <span className="block text-muted-foreground paragraph">little too personal for right now</span>
+            <span className="block text-muted-foreground paragraph">will make this public later on</span>
+          </li>
+
         </ul>
       </section>
     </div>
