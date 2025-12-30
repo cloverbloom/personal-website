@@ -14,9 +14,9 @@ export default function ContentPage() {
 
         <ul className="list-disc pl-8">
 
-          {/* august 4th, 2025 */}
+          {/* july 12th, 2025 */}
           <li>
-            <Link href="https://youtu.be/p2ryzCTziZw" target="_blank" rel="noopener noreferrer">August 4th, 2025 (17m)</Link>
+            <Link href="https://garrettnelson.co/check-ins" target="_blank" rel="noopener noreferrer">July 12th, 2025 (10m)</Link>
           </li>
 
           {/* july 17th, 2025 */}
@@ -24,16 +24,14 @@ export default function ContentPage() {
             <Link href="https://youtu.be/FPJEPo5kgm0" target="_blank" rel="noopener noreferrer">July 17th, 2025 (14m)</Link>
           </li>
 
-          {/* july 12th, 2025 */}
+          {/* august 4th, 2025 */}
           <li>
-            <Link href="https://youtu.be/p44Wr8PBQps" target="_blank" rel="noopener noreferrer">July 12th, 2025 (10m)</Link>
+            <Link href="https://youtu.be/p2ryzCTziZw" target="_blank" rel="noopener noreferrer">August 4th, 2025 (17m)</Link>
           </li>
 
-          {/* july 12th, 2025 */}
+          {/* october 7th, 2025 */}
           <li>
-            <Link href="https://garrettnelson.co" target="_blank" rel="noopener noreferrer">October 27th, 2025 (10m)</Link>
-            <span className="block text-muted-foreground paragraph">little too personal for right now</span>
-            <span className="block text-muted-foreground paragraph">will make this public later on</span>
+            <Link href="https://garrettnelson.co/check-ins" target="_blank" rel="noopener noreferrer">October 27th, 2025 (10m)</Link>
           </li>
 
         </ul>
