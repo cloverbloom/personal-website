@@ -16,7 +16,7 @@ export default function ContentPage() {
 
           {/* july 12th, 2025 */}
           <li>
-            <Link href="https://garrettnelson.co/check-ins" target="_blank" rel="noopener noreferrer">July 12th, 2025 (10m)</Link>
+            <Link href="https://garrettnelson.co/check-ins" rel="noopener noreferrer">July 12th, 2025 (10m)</Link>
           </li>
 
           {/* july 17th, 2025 */}
@@ -31,7 +31,7 @@ export default function ContentPage() {
 
           {/* october 7th, 2025 */}
           <li>
-            <Link href="https://garrettnelson.co/check-ins" target="_blank" rel="noopener noreferrer">October 27th, 2025 (10m)</Link>
+            <Link href="https://garrettnelson.co/check-ins" rel="noopener noreferrer">October 27th, 2025 (10m)</Link>
           </li>
 
         </ul>
