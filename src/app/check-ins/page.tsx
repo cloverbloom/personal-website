@@ -8,9 +8,9 @@ export default function ContentPage() {
 
         <p className="title">WEEKLY CHECK-IN VIDEOS</p>
         
-        <p> Here is a collection of weekly videos I've recorded.</p>
+        <p> Here is a collection of videos I've recorded as personal check-ins.</p>
 
-        <p> Mainly these videos cover anything I thought about or wrote about throughout the week.</p>
+        <p> These cover what I was thinking about at the time.</p>
 
         <ul className="list-disc pl-8">
 

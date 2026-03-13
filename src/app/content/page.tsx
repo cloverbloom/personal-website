@@ -21,9 +21,7 @@ export default function ContentPage() {
 
           {/* man's search for meaning */}
           <li>
-            <Link href="https://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/0807014273" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Man's Search for Meaning (165 Pages)</span></Link>
-            <span className="block text-muted-foreground paragraph">has ideas most people are not ready to accept</span>
-            <span className="block text-muted-foreground paragraph">think about this book daily</span>
+            <Link href="https://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/0807014273" target="_blank" rel="noopener noreferrer">Man's Search for Meaning (165 Pages)</Link>
           </li>
 
           {/* the almanack of naval ravikant */}
@@ -36,24 +34,9 @@ export default function ContentPage() {
             <Link href="https://jamesclear.com/atomic-habits" target="_blank" rel="noopener noreferrer">Atomic Habits (320 Pages)</Link>
           </li>
 
-          {/* good will hunting */}
-          <li>
-            <Link href="https://en.wikipedia.org/wiki/Good_Will_Hunting" target="_blank" rel="noopener noreferrer">Good Will Hunting (2h 4m)</Link>
-          </li>
-
           {/* four thousand weeks */}
           <li>
             <Link href="https://www.oliverburkeman.com/fourthousandweeks" target="_blank" rel="noopener noreferrer">Four Thousand Weeks (288 Pages)</Link>
-          </li>
-
-          {/* youtube @sneako */}
-          <li>
-            <Link href="https://www.youtube.com/@SNEAKO" target="_blank" rel="noopener noreferrer">YouTube @Sneako</Link>
-          </li>
-
-          {/* casey returns to new york city */}
-          <li>
-            <Link href="https://www.youtube.com/watch?v=igZ6PoZAszQ" target="_blank" rel="noopener noreferrer">Casey Niestat Returns To NYC</Link>
           </li>
 
           {/* fantastic mr.fox */}
@@ -63,17 +46,11 @@ export default function ContentPage() {
 
           {/* man's search for meaning */}
           <li>
-            <Link href="https://youtu.be/9boVw2lnP5Q?si=N08IeP4BxG8Adohj&t=2532" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>J. Cole ESPN Interview (8m)</span></Link>
-            <span className="block text-muted-foreground paragraph">define your dream as high as you possibly can</span>
-            <span className="block text-muted-foreground paragraph">believe it is possible & protect it</span>
-            <span className="block text-muted-foreground paragraph">start doing the hard work</span>
+            <Link href="https://youtu.be/9boVw2lnP5Q?si=N08IeP4BxG8Adohj&t=2532" target="_blank" rel="noopener noreferrer">J. Cole's ESPN Interview (8m)</Link>
           </li>
 
-          {/* man's search for meaning */}
           <li>
-            <Link href="https://youtu.be/pqWUuYTcG-o?si=2ipn05OR_5HfrCnR&t=794" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Rodger Federer "Perfection is Impossible" (2m)</span></Link>
-            <span className="block text-muted-foreground paragraph">attack everything with intensity</span>
-            <span className="block text-muted-foreground paragraph">but once it's behind you it's behind you</span>
+            <Link href="https://youtu.be/pqWUuYTcG-o?si=2ipn05OR_5HfrCnR&t=794" target="_blank" rel="noopener noreferrer">Rodger Federer's Commencement Address (2m)</Link>
           </li>
 
           {/* jeff bezos's shareholder letters */}
@@ -81,32 +58,22 @@ export default function ContentPage() {
             <Link href="https://open.spotify.com/episode/47t4mFYbqPy4uZWag2iO8m?si=5138b55b9ed84dec" target="_blank" rel="noopener noreferrer">Jeff Bezos's Shareholder Letters (1h 20m)</Link>
           </li>
 
-          {/* ---------- save for later ---------- */}
-
-          {/* 7 floor 645 square foot home in tokyo
           <li>
-            <Link href="https://www.youtube.com/watch?v=Wgw9tBynJck&list=WL&index=3" target="_blank" rel="noopener noreferrer">How an Architect Fit 7 Floors into His 645-Square-Foot Tokyo Home (12m)</Link>
-          </li> 
-          */}
+            <Link href="https://open.spotify.com/episode/6HWgMkWRkyqJZmZfqiMcCJ?si=-MZgAmxbRzOmTwXdIb0U2A" target="_blank" rel="noopener noreferrer">Ross Mackay's Open Residency Interview (1h 44m)</Link>
+          </li>
 
-          {/* mr.freeman part 02
-          <li>
-            <Link href="https://www.youtube.com/watch?v=YtcQz5Tplek" target="_blank" rel="noopener noreferrer">Mr.Freeman Part 02 (6m)</Link>
-          </li> 
-          */}
-
-          {/* poems & prayers - haven't finished this yet ( to abstract for most )
-          <li>
-            <Link href="https://en.wikipedia.org/wiki/Poems_%26_Prayers" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Poems & Prayers (208 Pages)</span></Link>
-            <span className="block text-muted-foreground paragraph">refreshing take on modern philosophy</span>
-          </li> 
-          */}
-
-          {/* the iliad - no clear message ( maybe just for "no one will remember your name" )
+          {/* the iliad - no clear message ( maybe just for "no one will remember your name" ) */}
           <li>
             <Link href="https://en.wikipedia.org/wiki/Iliad" target="_blank" rel="noopener noreferrer">The Iliad (704 Pages)</Link>
           </li> 
-          */}
+
+          {/* save for later */}
+         
+          {/* red text template */}
+          {/* <li>
+            <Link href="https://youtu.be/pqWUuYTcG-o?si=2ipn05OR_5HfrCnR&t=794" target="_blank" rel="noopener noreferrer" style={{ textDecorationColor: 'red' }}><span style={{ color: 'red' }}>Rodger Federer "Perfection is Impossible" (2m)</span></Link>
+            <span className="block text-muted-foreground paragraph">but once it's behind you it's behind you</span>
+          </li> */}
 
           {/* good will hunting - presents the message that you shouldn't run from your destiny?
           <li>
