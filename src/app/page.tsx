@@ -3,7 +3,6 @@ import { InView } from "@/components/ui/in-view";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Pintrest from "@/assets/images/photo.webp";
-import personalSignature from "@/assets/images/signature.webp";
 import { useState } from "react";
 
 export default function Home() {
@@ -91,16 +90,6 @@ export default function Home() {
             />
           </motion.div>
         </InView>
-
-        <p>It would be really fun to get emails from people. Anything is appreciated. You can ping me here at: garrett@cloverbloom.co</p>
-        <p>Cheers.</p>
-
-        <Image
-          src={personalSignature}
-          alt="Signature"
-          className="w-1/5 mx-auto rounded-lg object-cover"
-          style={{ height: 'auto' }}
-        />
 
       </section>
     </div>
