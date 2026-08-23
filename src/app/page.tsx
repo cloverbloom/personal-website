@@ -47,7 +47,7 @@ export default function Home() {
 
         <p className="title">GARRETT NELSON</p>
 
-        <p>Loading life story...</p>
+        <p>Still loading the life story...</p>
 
         <p>I want to send emails when I do something big. If you'd like to be on that list you can sign up here.</p>
 
