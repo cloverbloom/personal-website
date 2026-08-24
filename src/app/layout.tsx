@@ -68,7 +68,7 @@ export default function RootLayout({
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                  <BreadcrumbLink href="https://www.youtube.com/@garrettfnelson" target="_blank" rel="noopener noreferrer">YouTube</BreadcrumbLink>
+                  <BreadcrumbLink href="https://www.youtube.com/@garrettfnelson" target="_blank" rel="noopener noreferrer">Newsletters</BreadcrumbLink>
                 </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
