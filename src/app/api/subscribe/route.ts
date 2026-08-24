@@ -1,10 +1,22 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// API route to save email subscriptions to Google Sheets
+type KitErrorResponse = {
+  errors?: string[];
+};
+
+async function getKitErrorMessage(response: Response) {
+  try {
+    const data = await response.json() as KitErrorResponse;
+    return data.errors?.join(', ') || response.statusText;
+  } catch {
+    return response.statusText;
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json() as { email?: string };
-    const { email } = body;
+    const email = body.email?.trim().toLowerCase();
 
     if (!email || typeof email !== 'string') {
       return NextResponse.json({ error: 'Email is required' }, { status: 400 });
@@ -16,26 +28,55 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
-    // Send email to Google Sheets via Apps Script
-    const googleScriptUrl = 'https://script.google.com/macros/s/AKfycbxOfAEeR3g2lyGi7uF7zmJvtvKp9RmcTeNevD0Ndar5cz_JlDP2VfYV0QXbEG77JwdCrQ/exec';
+    const kitApiKey = process.env.KIT_API_KEY;
+    const kitFormId = process.env.KIT_FORM_ID;
 
-    const response = await fetch(googleScriptUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email }),
-    });
-
-    if (!response.ok) {
-      console.error('Google Script error:', response.statusText);
+    if (!kitApiKey || !kitFormId) {
+      console.error('Kit subscription is not configured.');
       return NextResponse.json(
-        { error: 'Failed to save email. Please try again.' },
+        { error: 'Subscription is not configured yet.' },
         { status: 500 }
       );
     }
 
-    console.log('Email saved to Google Sheets:', email, 'Timestamp:', new Date().toISOString());
+    const createSubscriberResponse = await fetch('https://api.kit.com/v4/subscribers', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Kit-Api-Key': kitApiKey,
+      },
+      body: JSON.stringify({ email_address: email }),
+    });
+
+    if (!createSubscriberResponse.ok) {
+      const error = await getKitErrorMessage(createSubscriberResponse);
+      console.error('Kit subscriber error:', error);
+      return NextResponse.json(
+        { error: 'Failed to subscribe. Please try again.' },
+        { status: 500 }
+      );
+    }
+
+    const addToFormResponse = await fetch(`https://api.kit.com/v4/forms/${kitFormId}/subscribers`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Kit-Api-Key': kitApiKey,
+      },
+      body: JSON.stringify({
+        email_address: email,
+        referrer: request.headers.get('referer'),
+      }),
+    });
+
+    if (!addToFormResponse.ok) {
+      const error = await getKitErrorMessage(addToFormResponse);
+      console.error('Kit form subscription error:', error);
+      return NextResponse.json(
+        { error: 'Failed to subscribe. Please try again.' },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({
       success: true,
