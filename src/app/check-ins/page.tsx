@@ -6,11 +6,9 @@ export default function ContentPage() {
     <div className="pt-8 w-4/5 md:w-2/5">
        <section className="paragraph space-y-8">
 
-        <p className="title">WEEKLY CHECK-IN VIDEOS</p>
+        <p className="title">CHECK-INS</p>
         
-        <p> Here is a collection of videos I've recorded as personal check-ins.</p>
-
-        <p> These cover what I was thinking about at the time.</p>
+        <p>Random video recordings from whenever I feel inspired.</p>
 
         <ul className="list-disc pl-8">
 

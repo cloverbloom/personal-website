@@ -48,7 +48,7 @@ export default function Home() {
 
         <p>Still loading the life story...</p>
 
-        <p>I want to send emails when I do something big. If you'd like to be on that list you can sign up here.</p>
+        <p>I send emails when I have big updates. You can sign up here.</p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -90,6 +90,8 @@ export default function Home() {
             />
           </motion.div>
         </InView>
+
+        <p>Cheers,</p>
 
       </section>
     </div>
